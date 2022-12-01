@@ -14,7 +14,7 @@ const Home = () => {
   }
 
   if (error) {
-    content = <p>Something went wrong</p>;
+    content = <p>Something went wrong, please try again later</p>;
   }
 
   if (!loading && !error && products.length === 0) {
@@ -28,7 +28,7 @@ const Home = () => {
   }
 
   return (
-    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-7xl gap-14 mx-auto my-10'>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-7xl gap-14 mx-auto my-10">
       {content}
     </div>
   );
